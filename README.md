@@ -50,8 +50,8 @@ The configuration details of each machine may be found below.
 The machines on the internal network are not exposed to the public Internet. 
 
 Only the Jump-Box-Provisioner and ELK machine can accept connections from the Internet. Access to these machines is only allowed from the following IP addresses:
-- My Home Public IP address for Jump-Box-Provisioner
-- My Home Public IP address and 10.0.0.4
+- The Jump-Box-Provisioner machine can be accessed from my home IP address via ssh.
+- The ELK machine can be accessed from my home IP address via port 5601 and from 10.0.0.4 via ssh.
 
 Machines within the network can only be accessed by Jump-Box-Provisioner.
 - Which machine did you allow to access your ELK VM? What was its IP address?\
@@ -61,10 +61,12 @@ A summary of the access policies in place can be found in the table below.
 
 | Name                 | Publicly Accessible | Allowed IP Addresses    |
 |----------------------|---------------------|-------------------------|
-| Jump-Box-Provisioner | Yes                 | My Home IP              |
+| Jump-Box-Provisioner | No                  | My Home IP              |
 | Web-1                | No                  | 10.0.0.4                |
 | Web-2                | No                  | 10.0.0.4                |
-| ELK                  | Yes                 | My Home IP and 10.0.0.4 |
+| ELK                  | NO                  | My Home IP and 10.0.0.4 |
+
+I had security rules in place that only allowed access to the network from my home.
 
 ### Elk Configuration
 
