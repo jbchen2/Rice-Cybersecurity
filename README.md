@@ -101,7 +101,7 @@ In order to use the playbook, you will need to have an Ansible control node alre
 SSH into the control node and follow the steps below:
 - Copy the [ELK-playbook.yml](Ansible/Roles/ELK-playbook.yml) file to /etc/ansible/roles.
 - Update the hosts file to include...\
-![alt text](Images/update_hosts.png)
+![alt text](Images/update_hosts.PNG)
 - Run the playbook, and navigate to _[ELK VM IP address]_:5601/app/kibana to check that the installation worked as expected.
 
 Here are the specific commands the user will need to run to download the playbook, update the files, etc.
