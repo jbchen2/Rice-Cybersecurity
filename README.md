@@ -55,7 +55,7 @@ Only the Jump-Box-Provisioner and ELK machine can accept connections from the In
 
 Machines within the network can only be accessed by Jump-Box-Provisioner.
 - Which machine did you allow to access your ELK VM? What was its IP address?\
-Jump-Box-Provisioner it's IP address was 10.0.0.4
+Jump-Box-Provisioner, it's IP address was 10.0.0.4
 
 A summary of the access policies in place can be found in the table below.
 
@@ -64,7 +64,7 @@ A summary of the access policies in place can be found in the table below.
 | Jump-Box-Provisioner | No                  | My Home IP              |
 | Web-1                | No                  | 10.0.0.4                |
 | Web-2                | No                  | 10.0.0.4                |
-| ELK                  | NO                  | My Home IP and 10.0.0.4 |
+| ELK                  | No                  | My Home IP and 10.0.0.4 |
 
 I had security rules in place that only allowed access to the network from my home.
 
