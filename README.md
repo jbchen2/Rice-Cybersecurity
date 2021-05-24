@@ -27,13 +27,13 @@ This document contains the following details:
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
 
 Load balancing ensures that the application will be highly available, in addition to restricting access to the network.
-- What aspect of security do load balancers protect? What is the advantage of a jump box?
+- What aspect of security do load balancers protect? What is the advantage of a jump box?..
 The aspect of security a load balancer protects is availability. The advantage of a jump box is access control.
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the log files and system metrics.
-- What does Filebeat watch for?
+- What does Filebeat watch for?..
 Filebeat watches out for changes in log files.  
-- What does Metricbeat record?
+- What does Metricbeat record?..
 System metrics such as CPU usage and memory usage.
 
 The configuration details of each machine may be found below.
@@ -54,7 +54,7 @@ Only the Jump-Box-Provisioner and ELK machine can accept connections from the In
 - My Home Public IP address and 10.0.0.4
 
 Machines within the network can only be accessed by Jump-Box-Provisioner.
-- Which machine did you allow to access your ELK VM? What was its IP address?
+- Which machine did you allow to access your ELK VM? What was its IP address?..
 Jump-Box-Provisioner it's IP address was 10.0.0.4
 
 A summary of the access policies in place can be found in the table below.
@@ -92,7 +92,6 @@ We have installed the following Beats on these machines:
 - Metricbeat
 
 These Beats allow us to collect the following information from each machine:
-- _TODO: In 1-2 sentences, explain what kind of data each beat collects, and provide 1 example of what you expect to see. E.g., `Winlogbeat` collects Windows logs, which we use to track user logon events, etc._
 - Filebeat collects system logs, such as sudo commands and SSH logins, from the Web VM's and forwards it to the ELK VM.
 - Metricbeat collects system metrics, such as CPU usage and memory usage, from the Web VM's and forwards it to the ELK VM.
 
