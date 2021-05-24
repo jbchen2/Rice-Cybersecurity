@@ -2,7 +2,7 @@
 
 The files in this repository were used to configure the network depicted below.
 
-![TODO: Update the path with the name of your diagram](Diagrams/ELK Network Diagram.png)
+![TODO: Update the path with the name of your diagram](Diagrams/ELK-Network-Diagram.png)
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the YAML files may be used to install only certain pieces of it, such as Filebeat.
 
@@ -28,13 +28,13 @@ The main purpose of this network is to expose a load-balanced and monitored inst
 
 Load balancing ensures that the application will be highly available, in addition to restricting access to the network.
 - What aspect of security do load balancers protect? What is the advantage of a jump box?
-⋅⋅⋅The aspect of security a load balancer protects is availability. The advantage of a jump box is access control.
+The aspect of security a load balancer protects is availability. The advantage of a jump box is access control.
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the log files and system metrics.
 - What does Filebeat watch for?
-⋅⋅⋅Filebeat watches out for changes in log files.  
+Filebeat watches out for changes in log files.  
 - What does Metricbeat record?
-⋅⋅⋅System metrics such as CPU usage and memory usage.
+System metrics such as CPU usage and memory usage.
 
 The configuration details of each machine may be found below.
 
@@ -55,7 +55,7 @@ Only the Jump-Box-Provisioner and ELK machine can accept connections from the In
 
 Machines within the network can only be accessed by Jump-Box-Provisioner.
 - Which machine did you allow to access your ELK VM? What was its IP address?
-⋅⋅⋅Jump-Box-Provisioner it's IP address was 10.0.0.4
+Jump-Box-Provisioner it's IP address was 10.0.0.4
 
 A summary of the access policies in place can be found in the table below.
 
@@ -102,7 +102,7 @@ In order to use the playbook, you will need to have an Ansible control node alre
 SSH into the control node and follow the steps below:
 - Copy the [ELK-playbook.yml](Ansible/Roles/ELK-playbook.yml) file to /etc/ansible/roles.
 - Update the hosts file to include...
-⋅⋅⋅![alt text](Images/update_hosts.png)
+![alt text](Images/update_hosts.png)
 - Run the playbook, and navigate to _[ELK VM IP address]_:5601/app/kibana to check that the installation worked as expected.
 
 Here are the specific commands the user will need to run to download the playbook, update the files, etc.
