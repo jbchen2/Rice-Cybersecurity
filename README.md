@@ -61,10 +61,11 @@ A summary of the access policies in place can be found in the table below.
 
 | Name                 | Publicly Accessible | Allowed IP Addresses    |
 |----------------------|---------------------|-------------------------|
-| Jump-Box-Provisioner | No                  | My Home IP              |
+| Jump-Box-Provisioner | Yes                 | My Home IP              |
 | Web-1                | No                  | 10.0.0.4                |
 | Web-2                | No                  | 10.0.0.4                |
-| ELK                  | No                  | My Home IP and 10.0.0.4 |
+| ELK                  | Yes                 | My Home IP and 10.0.0.4 |
+| Load Balancer        | Yes                 | My Home IP              |
 
 I had security rules in place that only allowed access to the network from my home.
 
