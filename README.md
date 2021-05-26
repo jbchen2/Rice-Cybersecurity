@@ -67,8 +67,6 @@ A summary of the access policies in place can be found in the table below.
 | ELK                  | Yes                 | My Home IP and 10.0.0.4 |
 | Load Balancer        | Yes                 | My Home IP              |
 
-I had security rules in place that only allowed access to the network from my home.
-
 ### Elk Configuration
 
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
