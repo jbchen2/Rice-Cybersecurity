@@ -2,16 +2,16 @@
 
 The files in this repository were used to configure the network depicted below.
 
-![TODO: Update the path with the name of your diagram](Diagrams/ELK-Network-Diagram.png)
+![TODO: Update the path with the name of your diagram](ELK-Project/Diagrams/ELK-Network-Diagram.png)
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the YAML files may be used to install only certain pieces of it, such as Filebeat.
 
-  - [DVWA-playbook](Ansible/Roles/DVWA-playbook.yml)
-  - [ELK-playbook](Ansible/Roles/ELK-playbook.yml)
-  - [Filebeat-playbook](Ansible/Roles/Filebeat-playbook.yml)
-  - [Metricbeat-playbook](Ansible/Roles/Metricbeat-playbook.yml)
-  - [filebeat-config](Ansible/Files/filebeat-config.yml)
-  - [metricbeat-config](Ansible/Files/metricbeat-config.yml)
+  - [DVWA-playbook](ELK-Project/Ansible/Roles/DVWA-playbook.yml)
+  - [ELK-playbook](ELK-Project/Ansible/Roles/ELK-playbook.yml)
+  - [Filebeat-playbook](ELK-Project/Ansible/Roles/Filebeat-playbook.yml)
+  - [Metricbeat-playbook](ELK-Project/Ansible/Roles/Metricbeat-playbook.yml)
+  - [filebeat-config](ELK-Project/Ansible/Files/filebeat-config.yml)
+  - [metricbeat-config](ELK-Project/Ansible/Files/metricbeat-config.yml)
 
 This document contains the following details:
 - Description of the Topology
@@ -81,7 +81,7 @@ The playbook implements the following tasks:
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-![TODO: Update the path with the name of your screenshot of docker ps output](Images/docker_ps_output.png)
+![TODO: Update the path with the name of your screenshot of docker ps output](ELK-Project/Images/docker_ps_output.png)
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
@@ -100,16 +100,16 @@ These Beats allow us to collect the following information from each machine:
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
 
 SSH into the control node and follow the steps below:
-- Copy the [ELK-playbook.yml](Ansible/Roles/ELK-playbook.yml) file to /etc/ansible/roles.
+- Copy the [ELK-playbook.yml](ELK-Project/Ansible/Roles/ELK-playbook.yml) file to /etc/ansible/roles.
 - Update the hosts file to include...\
-![alt text](Images/update_hosts.PNG)
+![alt text](ELK-Project/Images/update_hosts.PNG)
 - Run the playbook, and navigate to _[ELK VM IP address]_:5601/app/kibana to check that the installation worked as expected.
 
 Here are the specific commands the user will need to run to download the playbook, update the files, etc.
 
 - To download the playbook run the following command in the /etc/ansible/roles directory
 ```
-curl -o ELK-playbook.yml https://github.com/jbchen2/Rice-Cybersecurity/blob/main/ansible/roles/ELK-playbook.yml
+curl -o ELK-playbook.yml https://github.com/jbchen2/Rice-Cybersecurity/blob/master/ELK-Project/Ansible/Roles/ELK-playbook.yml
 ```
 - To update the hosts file do a `nano hosts` in the /etc/ansible directory then edit the hosts file by inserting the following:
 ```
