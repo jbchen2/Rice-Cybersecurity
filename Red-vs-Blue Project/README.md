@@ -9,7 +9,7 @@ The following procedure was used by the Red Team in order to attack the vulnerab
 * Hydra was used to brute force a user's password in order to login and gain access to the hidden directory.
 * Crackstation was used to crack a MD5 password hash in order to elevate privileges and gain access to an Administrator's account.
 * Msfvenom was used to create a reverse shell script against the vulnerable machine.
-* Msfconsole was used to create a listener, gain a metepreter shell, and remotely execute commands against the vulnerable server.
+* Msfconsole was used to create a listener, gain a meterpreter shell, and remotely execute commands against the vulnerable server.
 
 Kibana was utilized by the Blue Team in order to perform the following tasks.
 
