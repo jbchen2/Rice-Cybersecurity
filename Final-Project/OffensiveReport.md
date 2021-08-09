@@ -122,7 +122,7 @@ The Red Team was able to penetrate `Target 1` and retrieve the following confide
       
         - `sudo python -c 'import pty;pty.spawn("/bin/bash")'`
       
-      ![privilege escalation](privilegeEscalation.png)
+      ![privilege escalation](./Images/privilegeEscalation.png)
       - As root the `locate` command can be used to find flag4.
       
         - `locate flag4.txt`
