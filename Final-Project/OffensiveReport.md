@@ -70,7 +70,7 @@ The Red Team was able to penetrate `Target 1` and retrieve the following confide
       - `cd /var/www/html/wordpress/`
       - `cat wp-config.php`
       
-      ![MySQL login credentials](./Images/mysqlcredentials.png)
+      ![MySQL login credentials](./Images/mysqlCredentials.png)
       - The login credentials can be used to login to the MySQL database.
       - `mysql -u root -p'R@v3nSecurity'`
       
