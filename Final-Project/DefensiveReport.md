@@ -66,7 +66,7 @@ Traffic to these services should be carefully monitored. To this end, we have im
 
   ![alert 3](./Images/alert3.png)
 
-{#
+<!---
 ### Suggestions for Going Further (Optional)
 _TODO_: 
 - Each alert above pertains to a specific vulnerability/exploit. Recall that alerts only detect malicious behavior, but do not stop it. For each vulnerability/exploit identified by the alerts above, suggest a patch. E.g., implementing a blocklist is an effective tactic against brute-force attacks. It is not necessary to explain _how_ to implement each patch.
@@ -81,4 +81,4 @@ The logs and alerts generated during the assessment suggest that this network is
 - Vulnerability 3
   - **Patch**: TODO: E.g., _install `special-security-package` with `apt-get`_
   - **Why It Works**: TODO: E.g., _`special-security-package` scans the system for viruses every day_
-#}
+--->
