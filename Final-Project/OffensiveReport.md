@@ -85,16 +85,16 @@ The Red Team was able to penetrate `Target 1` and retrieve the following confide
       ```
       ![MySQL login](./Images/mysqlLogin.png)
       - After logging in to the MySQL database and browsing through the various databases and tables flag3 can be found in the `wp_posts` table. _flag4 can also be found here._
-      ```sql
+      ```
       show databases;
       use wordpress;
       ```
       ![show databses and use wordpress](./Images/showDatabases.png)
-      ```sql
+      ```
       show tables;
       ```
       ![show tables](./Images/showTables.png)
-      ```sql
+      ```
       select * from wp_posts 
       ```
       ![flag3](./Images/flag3.png)
